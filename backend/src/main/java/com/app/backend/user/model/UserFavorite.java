@@ -16,7 +16,7 @@ import java.util.Date;
 @TableName("user_favorites")
 public class UserFavorite {
 
-  @TableId(value="userId")
+  @TableId     ///(value="userId")
   private Long id;
 
   @TableField

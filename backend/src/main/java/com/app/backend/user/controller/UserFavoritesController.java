@@ -16,7 +16,7 @@ import java.util.stream.Collectors;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/favorites")
+@RequestMapping("/favorites")
 public class UserFavoritesController {
 
   private final UserFavoritesService userFavoritesService;
