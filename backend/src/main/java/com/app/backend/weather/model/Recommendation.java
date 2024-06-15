@@ -1,4 +1,4 @@
-package com.app.backend.user.model.weatherhome;
+package com.app.backend.weather.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

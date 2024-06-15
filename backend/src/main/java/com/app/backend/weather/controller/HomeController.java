@@ -1,4 +1,4 @@
-package com.app.backend.user.controller.weatherhome;
+package com.app.backend.weather.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
