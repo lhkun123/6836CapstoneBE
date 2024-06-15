@@ -1,4 +1,4 @@
-package com.app.backend.user.model.weatherhome;
+package com.app.backend.weather.model;
 
 
 import jakarta.persistence.Entity;
@@ -54,6 +54,7 @@ public class Field {
 
     @Column(name = "description", length = 500)
     private String description;
+
 
     // Getters and Setters
     public Long getId() {

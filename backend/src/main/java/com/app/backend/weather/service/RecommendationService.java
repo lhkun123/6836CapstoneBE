@@ -1,9 +1,9 @@
-package com.app.backend.user.service;
+package com.app.backend.weather.service;
 
-import com.app.backend.user.model.weatherhome.Field;
-import com.app.backend.user.model.weatherhome.Recommendation;
-import com.app.backend.user.repository.FieldRepository;
-import com.app.backend.user.repository.RecommendationRepository;
+import com.app.backend.weather.model.Field;
+import com.app.backend.weather.model.Recommendation;
+import com.app.backend.weather.repository.FieldRepository;
+import com.app.backend.weather.repository.RecommendationRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

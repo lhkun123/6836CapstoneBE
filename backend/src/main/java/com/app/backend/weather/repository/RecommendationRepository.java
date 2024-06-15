@@ -1,6 +1,6 @@
-package com.app.backend.user.repository;
+package com.app.backend.weather.repository;
 
-import com.app.backend.user.model.weatherhome.Recommendation;
+import com.app.backend.weather.model.Recommendation;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

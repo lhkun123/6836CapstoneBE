@@ -1,6 +1,6 @@
-package com.app.backend.user.controller.weatherhome;
+package com.app.backend.weather.controller;
 
-import com.app.backend.user.service.RecommendationService;
+import com.app.backend.weather.service.RecommendationService;
 import com.app.backend.user.service.WeatherService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
