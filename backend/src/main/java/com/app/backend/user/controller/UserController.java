@@ -58,6 +58,4 @@ public class UserController {
       userService.updateUser(user);
       return  JsonResponse.success();
    }
-
-
 }
