@@ -38,6 +38,12 @@ public class UserController {
       userService.addUser(user);
       return JsonResponse.success();
    }
+   @GetMapping("/user-tokens")
+   public JsonResponse<String> verifyToken(){
+      userSupport.getCurrentUserId();
+      return  JsonResponse.success();
+   }
+
    @PostMapping("/user-tokens")
    public JsonResponse<String> login(@RequestBody User user) throws  Exception{
       String token=userService.login(user);
@@ -58,6 +64,4 @@ public class UserController {
       userService.updateUser(user);
       return  JsonResponse.success();
    }
-
-
 }
