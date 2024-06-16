@@ -13,7 +13,7 @@ public class JsonResponse<T> {
    public JsonResponse(T data){
       this.data= data;
       this.msg="Success!";
-      this.code="0";
+      this.code="200";
    }
    public static JsonResponse<String> success(){
       return  new JsonResponse<>(null);

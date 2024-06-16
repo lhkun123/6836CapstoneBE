@@ -9,8 +9,7 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 public class UserSupport {
    public Long getCurrentUserId(){
       ServletRequestAttributes servletRequestAttributes= (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
-
-      String token=servletRequestAttributes.getRequest().getHeader("token");
+      String token=servletRequestAttributes.getRequest().getHeader("Authorization");
       Long userId= TokenUtil.verifyToken(token);
       if(userId<0){
          throw  new ConditionException("illegal user!");
