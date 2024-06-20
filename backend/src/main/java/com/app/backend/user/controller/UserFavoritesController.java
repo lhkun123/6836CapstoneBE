@@ -44,6 +44,7 @@ public class UserFavoritesController {
     @PostMapping
     public JsonResponse<String> addUserFavorite(@RequestBody UserFavorite userFavorite) {
         Long userId = userSupport.getCurrentUserId();
+        userFavorite.setUserId(userId);
         userFavoritesService.addUserFavorite(userFavorite);
         return JsonResponse.success();
     }
