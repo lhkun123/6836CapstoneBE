@@ -1,5 +1,6 @@
-package com.app.backend.user.controller.weatherhome;
+package com.app.backend.weather.controller;
 
+import com.app.backend.common.model.JsonResponse;
 import com.app.backend.user.service.WeatherService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,7 +15,8 @@ public class WeatherController {
     private WeatherService weatherService;
 
     @GetMapping("/weather")
-    public Map<String, String> getWeather(@RequestParam String city) {
-        return weatherService.getWeather(city);
+    public JsonResponse<Map<String, String>> getWeather(@RequestParam String city) {
+        Map<String, String> weatherData = weatherService.getWeather(city);
+        return new JsonResponse<>(weatherData);
     }
 }

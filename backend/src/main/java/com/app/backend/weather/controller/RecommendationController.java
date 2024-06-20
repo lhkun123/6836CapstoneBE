@@ -1,6 +1,7 @@
-package com.app.backend.user.controller.weatherhome;
+package com.app.backend.weather.controller;
 
-import com.app.backend.user.service.RecommendationService;
+import com.app.backend.common.model.JsonResponse;
+import com.app.backend.weather.service.RecommendationService;
 import com.app.backend.user.service.WeatherService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,8 +19,9 @@ public class RecommendationController {
     private WeatherService weatherService;
 
     @GetMapping("/recommendation")
-    public Map<String, Object> getRecommendation(@RequestParam String city) {
+    public JsonResponse<Map<String, Object>> getRecommendation(@RequestParam String city) {
         Map<String, String> weatherData = weatherService.getWeather(city);
-        return recommendationService.generateRecommendation(weatherData);
+        Map<String, Object> recommendation = recommendationService.generateRecommendation(weatherData);
+        return new JsonResponse<>(recommendation);
     }
 }
