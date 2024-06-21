@@ -16,7 +16,7 @@ import java.util.Date;
 @TableName("user_favorites")
 public class UserFavorite {
 
-  @TableId(value="userId")
+  @TableId     ///(value="userId")
   private Long id;
 
   @TableField
@@ -28,5 +28,14 @@ public class UserFavorite {
   @TableField
   private String alias;
 
+  // @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+  // @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone="America/Vancouver")
+  // @TableField(value="createTime",fill = FieldFill.INSERT)
+  // private Date createTime;
+
+  // @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+  // @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone="America/Vancouver")
+  // @TableField(value="updateTime",fill = FieldFill.INSERT_UPDATE)
+  // private Date updateTime;
   
 }

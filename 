@@ -1,0 +1,216 @@
+[33mcommit a75bc950a2a8f57b9c6132f8dfab1cb8e0e99937[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/kevin[m[33m)[m
+Author: keviny <kevinyih2022@gmail.com>
+Date:   Thu Jun 20 20:47:05 2024 -0700
+
+    resolved
+
+[33mcommit 36a6a5d7de6598913025e117dc61dbbf81962fc8[m
+Merge: 6edc870 a97f732
+Author: keviny <kevinyih2022@gmail.com>
+Date:   Thu Jun 20 20:32:10 2024 -0700
+
+    Resolved and merge
+
+[33mcommit a97f7327a1ca00f22eda1b6d542fcb716583ce6d[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: 3006cc9 32d6ef3
+Author: lhkun123 <66795576+lhkun123@users.noreply.github.com>
+Date:   Thu Jun 20 11:26:20 2024 -0700
+
+    Merge pull request #8 from lhkun123/dev
+    
+    addUserFavorite API
+
+[33mcommit 32d6ef3ba30d845f7937826cd0d0b244d4cd9c3e[m[33m ([m[1;31morigin/dev[m[33m)[m
+Author: Hongkun LIU <66795576+lhkun123@users.noreply.github.com>
+Date:   Thu Jun 20 11:25:48 2024 -0700
+
+    addUserFavorite API
+
+[33mcommit 3006cc9e378292e8b433e4f6b1cd4d891ccf4ac2[m
+Merge: 6805bc7 cb7c7b2
+Author: Hongkun LIU <66795576+lhkun123@users.noreply.github.com>
+Date:   Wed Jun 19 22:45:41 2024 -0700
+
+    Merge remote-tracking branch 'origin/Mengqiu'
+    
+    # Conflicts:
+    #       backend/src/main/java/com/app/backend/user/controller/UserFavoritesController.java
+    #       backend/src/main/java/com/app/backend/user/model/UserFavorite.java
+    #       backend/src/main/java/com/app/backend/user/service/UserFavoritesService.java
+    #       backend/src/main/java/com/app/backend/weather/controller/FieldController.java
+    #       backend/src/main/java/com/app/backend/weather/controller/RecommendationController.java
+    #       backend/src/main/java/com/app/backend/weather/model/Field.java
+    #       backend/src/main/java/com/app/backend/weather/model/Recommendation.java
+    #       init.txt
+
+[33mcommit 6805bc7533f34646fb7075c5f061762ca55f5ca5[m
+Merge: 6045156 ed50c25
+Author: lhkun123 <66795576+lhkun123@users.noreply.github.com>
+Date:   Wed Jun 19 22:39:54 2024 -0700
+
+    Merge pull request #6 from lhkun123/kevin
+    
+    Kevin favorites module
+
+[33mcommit cb7c7b2c2c44589a27624b58f7fcd29fc42d6e6c[m[33m ([m[1;31morigin/Mengqiu[m[33m)[m
+Author: Mengqiu Shao <137229092+MengqiuShao@users.noreply.github.com>
+Date:   Wed Jun 19 19:28:53 2024 -0700
+
+    fixed some bugs
+
+[33mcommit 60451561ccada262eb3e866b8451879919478701[m
+Merge: 467d9f3 4ad5f5f
+Author: Hongkun LIU <66795576+lhkun123@users.noreply.github.com>
+Date:   Sun Jun 16 01:40:44 2024 -0700
+
+    Merge remote-tracking branch 'origin/kevin'
+    
+    # Conflicts:
+    #       backend/src/main/resources/application.properties
+
+[33mcommit 467d9f32989063d249395668c1618cc533af121d[m
+Merge: 59e366d 4ac4ec1
+Author: lhkun123 <66795576+lhkun123@users.noreply.github.com>
+Date:   Sun Jun 16 01:30:11 2024 -0700
+
+    Merge pull request #5 from lhkun123/dev
+    
+    Token Verfication API
+
+[33mcommit ed50c25592ab722f26d3a15df73f4a644d002979[m[33m ([m[1;32mkevin[m[33m)[m
+Author: keviny <kevinyih2022@gmail.com>
+Date:   Sun Jun 16 01:28:54 2024 -0700
+
+    Json Response comments
+
+[33mcommit 5f4da2fb0d9b38cd8ee2a14f0b2feaf5e49f5b93[m
+Author: keviny <kevinyih2022@gmail.com>
+Date:   Sun Jun 16 01:24:54 2024 -0700
+
+    Json Response
+
+[33mcommit 4ac4ec1fda4bf8d91ecd303f0c7ed22b7374f6a4[m
+Author: Hongkun LIU <66795576+lhkun123@users.noreply.github.com>
+Date:   Sun Jun 16 01:24:29 2024 -0700
+
+    Time to Live
+
+[33mcommit 36728dd0dd389a0127b5f55740fdb799c731ef59[m
+Author: Hongkun LIU <66795576+lhkun123@users.noreply.github.com>
+Date:   Sat Jun 15 20:41:32 2024 -0700
+
+    Token Verification
+
+[33mcommit a6cd88dc49af87dd8170b27c3b8d59d9c03a500e[m
+Author: Hongkun LIU <66795576+lhkun123@users.noreply.github.com>
+Date:   Sat Jun 15 16:09:16 2024 -0700
+
+    Delete unnecessary files
+
+[33mcommit 59e366d6b8c2da7db24e32d721429914e1a93df1[m
+Merge: df7f752 87f1e2e
+Author: lhkun123 <66795576+lhkun123@users.noreply.github.com>
+Date:   Sat Jun 15 16:05:45 2024 -0700
+
+    Merge pull request #4 from lhkun123/dev
+    
+    Modification of Project Structure
+
+[33mcommit 87f1e2e1b041e5ae318345a9466da791e2d659fb[m
+Author: Hongkun LIU <66795576+lhkun123@users.noreply.github.com>
+Date:   Sat Jun 15 16:05:17 2024 -0700
+
+    Modification of Project Structure
+
+[33mcommit df7f752459e828bb7b4a74e7e7e89f5b85ee156c[m
+Merge: 68f6b0f 9ed069c
+Author: lhkun123 <66795576+lhkun123@users.noreply.github.com>
+Date:   Sat Jun 15 15:18:42 2024 -0700
+
+    Merge pull request #3 from lhkun123/Mengqiu
+    
+    add weather and fields api
+
+[33mcommit 9ed069c3884dbd748ce112f82d835f8ebb5e2c5b[m
+Author: Mengqiu Shao <137229092+MengqiuShao@users.noreply.github.com>
+Date:   Sat Jun 15 15:16:32 2024 -0700
+
+    add weather and fields api
+
+[33mcommit 4ad5f5f29927c593a62742d595c46c9f0f16539f[m
+Author: keviny <kevinyih2022@gmail.com>
+Date:   Tue Jun 11 00:43:22 2024 -0700
+
+    favorites database
+
+[33mcommit a3e094d0e2dceefabf97a544a5cb93622d226079[m
+Author: keviny <kevinyih2022@gmail.com>
+Date:   Mon Jun 10 18:15:55 2024 -0700
+
+    init favorites
+
+[33mcommit 6edc870b8e82cfd35cf01b20c896c583e4d4a7e3[m
+Author: keviny <kevinyih2022@gmail.com>
+Date:   Mon Jun 10 17:52:50 2024 -0700
+
+    favorites init
+
+[33mcommit 68e65a88b853bdb734b91d67378b9a88a5bc473b[m
+Author: keviny <kevinyih2022@gmail.com>
+Date:   Tue Jun 4 02:08:39 2024 -0700
+
+    HikariCP connection pool configurations
+
+[33mcommit 9a1d95372fb2d97eefbdbf815d9d3cd32a223465[m
+Author: keviny <kevinyih2022@gmail.com>
+Date:   Mon Jun 3 23:39:03 2024 -0700
+
+    init
+
+[33mcommit 68f6b0fd46f8c341468cb757d70a565f379983dc[m
+Merge: 579ac1c c7f1d77
+Author: lhkun123 <66795576+lhkun123@users.noreply.github.com>
+Date:   Wed May 29 18:05:58 2024 -0700
+
+    Merge pull request #2 from lhkun123/Nine
+    
+    Data source configuration
+
+[33mcommit c7f1d77905137bb16a4e09fd5fa9e4a078f7c4ee[m[33m ([m[1;31morigin/Nine[m[33m)[m
+Author: LunaWang9 <lunaw9911@gmail.com>
+Date:   Wed May 29 18:03:56 2024 -0700
+
+    Data source configuration
+
+[33mcommit 579ac1ca0c93be12005b15c3f4dab40a7e276f49[m
+Merge: d21f364 1c08384
+Author: lhkun123 <66795576+lhkun123@users.noreply.github.com>
+Date:   Sun May 26 22:00:06 2024 -0700
+
+    Merge pull request #1 from lhkun123/dev
+    
+    Authorization and authentication of user
+
+[33mcommit 1c083849e4f538c09c6e550442a84cbb089fbc0b[m
+Author: Hongkun LIU <66795576+lhkun123@users.noreply.github.com>
+Date:   Sun May 26 21:58:57 2024 -0700
+
+    Authorization and authentication of user
+
+[33mcommit d21f364f52ef3fb70e3d882d36f0385705ad6dcd[m
+Author: Hongkun LIU <66795576+lhkun123@users.noreply.github.com>
+Date:   Mon May 6 13:58:14 2024 -0700
+
+    Second Commit
+
+[33mcommit 63b52afa749e67cf466cd6afa18fadcfbed449a0[m
+Author: Hongkun LIU <66795576+lhkun123@users.noreply.github.com>
+Date:   Mon May 6 13:55:34 2024 -0700
+
+    First Commit
+
+[33mcommit e4c882bd197dc2354657911183fbc9bc3362513a[m
+Author: lhkun123 <66795576+lhkun123@users.noreply.github.com>
+Date:   Mon May 6 13:42:09 2024 -0700
+
+    Initial commit
