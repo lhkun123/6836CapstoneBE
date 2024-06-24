@@ -13,7 +13,7 @@ public class ConditionException extends RuntimeException{
    }
    public ConditionException(String name){
       super(name);
-      code="500";
+      code="400";
    }
 
    public String getCode() {
