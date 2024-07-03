@@ -46,12 +46,12 @@ public class RecommendationService {
                 fieldInfo.put("difficulty", field.getDifficulty());
                 fieldInfo.put("distance", field.getDistance());
                 fieldInfo.put("estimated_time", field.getEstimatedTime());
-                fieldInfo.put("image_url", field.getImageUrl());
-                fieldInfo.put("preview_image_url1", field.getPreviewImageUrl1());
-                fieldInfo.put("preview_image_url2", field.getPreviewImageUrl2());
-                fieldInfo.put("preview_image_url3", field.getPreviewImageUrl3());
-                fieldInfo.put("preview_image_url4", field.getPreviewImageUrl4());
-                fieldInfo.put("preview_image_url5", field.getPreviewImageUrl5());
+                fieldInfo.put("imageUrl", field.getImageUrl());
+                fieldInfo.put("previewImageUrl1", field.getPreviewImageUrl1());
+                fieldInfo.put("previewImageUrl2", field.getPreviewImageUrl2());
+                fieldInfo.put("previewImageUrl3", field.getPreviewImageUrl3());
+                fieldInfo.put("previewImageUrl4", field.getPreviewImageUrl4());
+                fieldInfo.put("previewImageUrl5", field.getPreviewImageUrl5());
                 fieldInfo.put("description", field.getDescription());
                 fieldData.add(fieldInfo);
             }
