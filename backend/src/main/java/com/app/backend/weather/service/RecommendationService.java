@@ -21,7 +21,7 @@ public class RecommendationService {
         Map<String, Object> recommendation = new LinkedHashMap<>();
         String weatherType = weatherData.get("weather_type");
 
-        Optional<Recommendation> recommendationEntityOptional = recommendationRepository.findTopByTypeOrderByScoreDesc(weatherType);
+        Optional<Recommendation> recommendationEntityOptional = recommendationRepository.findTopByTypeRandomly(weatherType);
 
         if (recommendationEntityOptional.isPresent()) {
             Recommendation recommendationEntity = recommendationEntityOptional.get();
@@ -35,7 +35,15 @@ public class RecommendationService {
         recommendation.put("showHikingList", showHikingList);
 
         if (showHikingList) {
-            List<Field> fields = fieldRepository.findTop5ByRecommendationTypeOrderByRatingDesc(recommendationType);
+            List<Field> fields;
+            if (recommendationType.equals("highly_recommended")) {
+                fields = fieldRepository.findTop5Randomly();
+            } else if (recommendationType.equals("recommended")) {
+                fields = fieldRepository.findTop5ByRecommendationTypesRandomly("recommended", "low_recommended");
+            } else {
+                fields = fieldRepository.findTop5ByRecommendationTypeRandomly("low_recommended");
+            }
+
             List<Map<String, Object>> fieldData = new ArrayList<>();
             for (Field field : fields) {
                 Map<String, Object> fieldInfo = new HashMap<>();
