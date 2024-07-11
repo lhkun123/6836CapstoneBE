@@ -1,48 +1,55 @@
 package com.app.backend.weather.model;
 
-import jakarta.persistence.*;
-import org.springframework.format.annotation.DateTimeFormat;
-import com.fasterxml.jackson.annotation.JsonFormat;
-import lombok.Data;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Column;
 
-import java.util.Date;
-
-@Data
 @Entity
-@Table(name = "recommendation")
 public class Recommendation {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "score")
     private int score;
 
-    @Column(name = "message")
     private String message;
 
     @Column(name = "type")
     private String type;
 
-    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "America/Vancouver")
-    @Column(name = "create_time", updatable = false)
-    private Date createTime;
-
-    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "America/Vancouver")
-    @Column(name = "update_time")
-    private Date updateTime;
-
-    @PrePersist
-    protected void onCreate() {
-        createTime = new Date();
-        updateTime = new Date();
+    // Getters and Setters
+    public Long getId() {
+        return id;
     }
 
-    @PreUpdate
-    protected void onUpdate() {
-        updateTime = new Date();
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public int getScore() {
+        return score;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 }
