@@ -1,6 +1,4 @@
 package com.app.backend.common.model.exception;
-
-
 import com.app.backend.common.model.JsonResponse;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.core.Ordered;
