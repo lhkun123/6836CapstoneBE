@@ -25,7 +25,7 @@ public class UserInfo {
    private  String nick;
 
    @TableField
-   private Blob avatar;
+   private String avatar;
 
 
    @TableField
