@@ -18,4 +18,9 @@ public interface FieldRepository extends JpaRepository<Field, Long> {
 
     @Query(value = "SELECT * FROM field ORDER BY RAND() LIMIT 5", nativeQuery = true)
     List<Field> findTop5Randomly();
+
+    @Query(value = "SELECT * FROM field WHERE name = ?1", nativeQuery = true)
+    Field findFieldByName(String name);
+
+
 }

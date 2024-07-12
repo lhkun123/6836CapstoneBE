@@ -15,6 +15,10 @@ public class FieldService {
         return fieldRepository.findAll();
     }
 
+    public Field getFieldByName(String name){
+        return fieldRepository.findFieldByName(name);
+    }
+
     public Field getFieldById(Long id) {
         return fieldRepository.findById(id).orElse(null);
     }
