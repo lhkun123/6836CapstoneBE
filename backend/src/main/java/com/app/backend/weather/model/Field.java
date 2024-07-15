@@ -5,9 +5,15 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+import com.baomidou.mybatisplus.annotation.TableName;
+
 import jakarta.persistence.Column;
 
 @Entity
+@Table(name = "field")
+@TableName("field") // MyBatis Plus 注解
 public class Field {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -177,3 +183,4 @@ public class Field {
         this.description = description;
     }
 }
+

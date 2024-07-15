@@ -9,4 +9,8 @@ import java.util.List;
 @Repository
 public interface FieldRepository extends JpaRepository<Field, Long> {
     List<Field> findTop5ByRecommendationTypeOrderByRatingDesc(String recommendationType);
+
+    Field findByName(String name);
+
+    Field findByLocation(String location);
 }
