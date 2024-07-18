@@ -37,5 +37,8 @@ public class ClothingRecommendationController {
         responseData.put("recommendation", recommendation);
         return new JsonResponse<>(responseData);
     }
+
+
+
 }
 

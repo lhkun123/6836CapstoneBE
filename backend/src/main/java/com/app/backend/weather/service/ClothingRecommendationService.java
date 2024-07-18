@@ -53,7 +53,7 @@ public class ClothingRecommendationService {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
         return recommendation;
     }
+
 }

@@ -21,8 +21,13 @@ public class FieldController {
 
     @GetMapping("/api/field")
     public JsonResponse<Field> getFieldByName(@RequestParam String field) {
-        System.out.println(field);
         Field result = fieldService.getFieldByName(field);
+        return new JsonResponse<>(result);
+    }
+
+    @GetMapping("/api/trails-recommendation")
+    public JsonResponse<String> getRecommendationFromGPT(@RequestParam String location) {
+        String result = fieldService.getRecommendationFromGPT(location);
         return new JsonResponse<>(result);
     }
 }
