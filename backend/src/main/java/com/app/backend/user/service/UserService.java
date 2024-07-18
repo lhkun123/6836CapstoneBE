@@ -59,6 +59,7 @@ public class UserService extends ServiceImpl<UserMapper, User>{
       userMapper.insert(user);
       UserInfo userInfo=new UserInfo();
       userInfo.setUserId(user.getId());
+      userInfo.setAvatar("");
       userInfo.setNick(UserConstant.NICK);
       userInfo.setBirth(UserConstant.DEFAULT_BIRTH);
       userInfo.setGender(UserConstant.GENDER_MALE);
