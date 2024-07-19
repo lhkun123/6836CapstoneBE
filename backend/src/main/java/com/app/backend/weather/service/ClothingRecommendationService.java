@@ -27,7 +27,7 @@ public class ClothingRecommendationService {
         headers.set("Content-Type", "application/json");
 
         Map<String, Object> requestBody = new HashMap<>();
-        requestBody.put("model", "gpt-3.5-turbo");
+        requestBody.put("model", "gpt-4o-mini");
         requestBody.put("messages", new Object[]{
                 new HashMap<String, String>() {{
                     put("role", "user");
